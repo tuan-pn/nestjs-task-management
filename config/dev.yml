@@ -1,0 +1,10 @@
+db:
+  type: 'postgres'
+  host: 'localhost'
+  username: 'postgres'
+  password: 'postgres'
+  synchonize: true
+
+jwt:
+  secret: 'jwtSecret'
+  expiresIn: 2592000 # 30 days

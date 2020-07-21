@@ -16,7 +16,7 @@ export class TaskRepository extends Repository<Task> {
     );
 
     if (status) {
-      query.andWhere('task.status = :status', { status });
+      query.andWhere('task.status = :status', { status: status.toLowerCase() });
     }
     if (search) {
       query.andWhere(

@@ -11,7 +11,7 @@ export class CreateTaskDto {
 
 export class GetTasksFilterDto {
   @IsOptional()
-  @IsIn([TaskStatus.OPEN, TaskStatus.IN_PROGRESS, TaskStatus.DONE])
+  // @IsIn([TaskStatus.OPEN, TaskStatus.IN_PROGRESS, TaskStatus.DONE])
   status: TaskStatus;
 
   @IsOptional()
